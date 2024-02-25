@@ -143,7 +143,7 @@ public class CurrencyControllerTest {
     }
 
     @Test
-    void itShouldUpdateCurrencyById() throws Exception {
+    void itShouldUpdateCurrencyById() {
         // given
         var id = UUID.randomUUID();
         var command = Instancio.create(UpdateCurrencyCommand.class);

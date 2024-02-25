@@ -1,6 +1,5 @@
 package nl.pharmacryptopartners.cryptocurrencymanager.controllerAdvice;
 
-import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import nl.pharmacryptopartners.cryptocurrencymanager.controllerAdvice.exception.CurrencyNotFoundException;
 import org.springframework.http.HttpStatus;

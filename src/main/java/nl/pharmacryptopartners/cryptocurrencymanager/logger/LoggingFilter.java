@@ -20,7 +20,7 @@ public class LoggingFilter implements Filter {
     private final String messageTemplate = "request: %s %s %s with body (%s) resulted in status: %s";
 
     @Override
-    public void init(FilterConfig filterconfig) throws ServletException {
+    public void init(FilterConfig filterconfig) {
         var logFilePath = "src/main/java/nl/pharmacryptopartners/cryptocurrencymanager/logger/logfile.log";
         try {
             fileHandler = new FileHandler(logFilePath);
