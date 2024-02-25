@@ -1,0 +1,21 @@
+### create currency
+POST http://localhost:8080/api/currencies
+Content-Type: application/json
+
+{
+  "id": "f9051bf2-c865-487a-854b-25c587688e68",
+  "ticker": "ABC",
+  "name": "alphabet",
+  "numberOfCoins": 1,
+  "marketCapitalization": 1
+}
+
+### fail to create currency without numberOfCoins and marketCapitalization (400)
+POST http://localhost:8080/api/currencies
+Content-Type: application/json
+
+{
+  "id": "f9051bf2-c865-487a-854b-25c587688e68",
+  "ticker": "ABC",
+  "name": "alphabet"
+}

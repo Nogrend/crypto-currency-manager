@@ -1,0 +1,11 @@
+### get currencies with pagination page 1 with size 2
+GET http://localhost:8080/api/currencies?page=1&size=2
+Content-Type: application/json
+
+### get Bitcoin currency
+GET http://localhost:8080/api/currencies/c17ec328-2cd2-45ca-b5d4-a1dcbf6d64e4
+Content-Type: application/json
+
+### fail to get unknown currency (404)
+GET http://localhost:8080/api/currencies/a17ec328-2cd2-45ca-b5d4-a1dcbf6d64e4
+Content-Type: application/json

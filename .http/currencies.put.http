@@ -1,0 +1,21 @@
+### update numberOfCoins to 100 and marketCapitalization to 1000
+PUT http://localhost:8080/api/currencies/f9051bf2-c865-487a-854b-25c587688e68
+Content-Type: application/json
+
+{
+  "ticker": "ABC",
+  "name": "alphabet",
+  "numberOfCoins": 100,
+  "marketCapitalization": 1000
+}
+
+### fail to update numberOfCoins to 100 and marketCapitalization to (nagative) -1000
+PUT http://localhost:8080/api/currencies/f9051bf2-c865-487a-854b-25c587688e68
+Content-Type: application/json
+
+{
+  "ticker": "ABC",
+  "name": "alphabet",
+  "numberOfCoins": 100,
+  "marketCapitalization": -1000
+}
